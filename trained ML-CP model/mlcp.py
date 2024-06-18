@@ -1,4 +1,3 @@
-#!/home/jvanbuskirk/Python-3.8.5/bin/python3.8
 
 def print_cif(cif, sf=1.0, temp=None):
     import time

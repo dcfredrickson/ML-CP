@@ -20,7 +20,9 @@ Optionally, you can also provide a scale factor and template. Scale factors can 
 To run the mlcp.py program with a scale factor and template or just a template, run the commands
 
 `python3.8 mlcp.py [CIF filename] [scale factor] [template filename]`
+
 or
+
 `python3.8 mlcp.py [CIF filename] 1 [template filename]`
 
 respecively. In the latter case, a scale factor is still required so 1 is used as a placeholder without modifiying the scale. 

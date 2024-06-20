@@ -25,4 +25,14 @@ or
 
 `python3.8 mlcp.py [CIF filename] 1 [template filename]`
 
-In the latter case a scale factor is still required, so 1 is used as a placeholder without modifiying the scale. 
+In the latter case a scale factor is still required, so 1 is used as a placeholder without modifiying the scale. Please note, if a template is used, it will not be possible to calculate the net CP of the cell, so that information will not be outputted. Regardless of if the scale factor or template options are used, the mlcp.py program will create five new files, following the format [CIF filename]_MLCP-[file type]. The five file types are:
+* -cell
+* -geo
+* -coeff
+* -bptable
+* -data
+
+The first two describe the unit cell and atomic positions of each atom, both in cartesian coordinates. 
+The -coeff file contains coeffecients for the l=0 - l=4 spherical harmonics. 
+The -bptable file contains data about each interatomic contact in the cell, including the identity and coordinates of each atom in the contact, the contact length, the average pressure (in units of eV/Å<sup>3</sup>), the number of voxels in the contact, and the volume of the contact in Å<sup>3</sup>. 
+The -data file contains information about the ML-CP calculation, including the CIF filename, the scale factor used, the cell parameters, a CP quadrupole report, the net CP of each atom in the cell, the net CP of the cell (if a template was not used), and the calculation time. 

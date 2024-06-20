@@ -25,4 +25,4 @@ or
 
 `python3.8 mlcp.py [CIF filename] 1 [template filename]`
 
-respecively. In the latter case, a scale factor is still required so 1 is used as a placeholder without modifiying the scale. 
+In the latter case a scale factor is still required, so 1 is used as a placeholder without modifiying the scale. 

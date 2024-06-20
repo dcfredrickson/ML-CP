@@ -6,6 +6,4 @@ This repository is divided into two directories. In the "ML-CP training" directo
 All code is written in python, and may require python version 3.8 and SciKit Learn version 1.3.2 to run. At the very least, the training and utility code will need the same version of python and SciKit Learn. 
 
 To run the machine_learning.py code to produce the classifier and regressor models, download the files contact_data_by_cp.xlsx, element_data.xlsx, and machine_learning.py. With these three files in the same directory, run the command 
-'''
-python3.8 machine_learning.py
-'''
+`python3.8 machine_learning.py`
